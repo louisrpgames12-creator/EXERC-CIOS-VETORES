@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    int array[10] = {0}, nota = 0, posicao, i;
+    
+    printf("ME INFORME 10 NUMEROS INTEIROS: ");
+    
+    for(i = 0; i < 10; i++) {
+        scanf("%d", &array[i]);
+        
+        if(array[i] >= nota) {
+        nota = array[i];
+        posicao = i;
+        }
+    }
+    
+    printf("MAIOR NOTA E: %d E ESTA NA POSICAO: %d", nota, posicao);
+
+
+    return 0;
+}
