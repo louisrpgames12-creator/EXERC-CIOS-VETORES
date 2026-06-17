@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+    int array[10] = {0}, i;
+    
+    printf("ME INFORME 10 NUMEROS INTEIROS: ");
+    
+    for(i = 0; i < 10; i++) {
+        scanf("%d", &array[i]);
+    }
+    
+    printf("\nARRAY: ");
+    
+    for(i = 0; i < 10; i++) {
+        printf("%d ", array[i]);
+    }
+
+    return 0;
+}
