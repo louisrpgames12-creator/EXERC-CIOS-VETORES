@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    int i;
+    float nota[4] = {0}, acumulada = 0;
+    
+    for(i = 0; i < 4; i++) {
+           printf("ME INFORME A NOTA %d: ", i + 1);
+           scanf("%f", &nota[i]);
+           acumulada += nota[i];
+    }
+    
+    for(i = 0; i < 4; i++) {
+           printf("\nnota %d: %.2f", i+1, nota[i]);
+    }
+    
+    printf("\na media aritmetica e: %.2f", acumulada/4);
+
+
+    return 0;
+}
